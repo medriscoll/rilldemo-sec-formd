@@ -1,0 +1,29 @@
+# Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
+
+display_name: "OFFERINGS_ISSUERS_model_dashboard"
+model: "OFFERINGS_ISSUERS_model"
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: "offering_saledate"
+measures:
+  - label: Total Records
+    expression: count(*)
+    description: Total number of records present
+    format_preset: humanize
+  - label: "Toal Offering Amount"
+    expression: "sum(totalofferingamount)"
+    description: ""
+    format_preset: humanize
+dimensions:
+  - label: Offering_IndustryGroupType
+    property: offering_IndustryGroupType
+    description: ""
+  - label: Offering_InvestmentFundType
+    property: offering_InvestmentFundType
+    description: ""
+  - label: Issuer_EntityName
+    property: issuer_EntityName
+    description: ""
+  - label: Recipient_name
+    property: recipient_name
+    description: ""

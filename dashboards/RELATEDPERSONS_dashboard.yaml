@@ -1,7 +1,7 @@
 # Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
 
 display_name: "RELATEDPERSONS_dashboard"
-model: "RELATEDPERSONS_model_1"
+model: "RELATEDPERSONS_model"
 default_time_range: ""
 smallest_time_grain: ""
 timeseries: ""
