@@ -1,19 +1,19 @@
 # Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
 
-display_name: "OFFERINGS_ISSUERS_model_dashboard"
+display_name: "SEC Form D Statistics 2008-2022"
 model: "OFFERINGS_ISSUERS_model"
-default_time_range: ""
+default_time_range: "P4W"
 smallest_time_grain: ""
 timeseries: "offering_saledate"
 measures:
-  - label: Total Records
+  - label: Total Offerings
     expression: count(*)
     description: Total number of records present
     format_preset: humanize
   - label: "Toal Offering Amount"
     expression: "sum(totalofferingamount)"
-    description: ""
-    format_preset: humanize
+    description: "Total amount of offering in USD"
+    format_preset: currency_usd
 dimensions:
   - label: Offering_IndustryGroupType
     property: offering_IndustryGroupType
